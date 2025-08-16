@@ -15,11 +15,11 @@ function signupUser(event) {
 function checkLogin() {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
   if (!isLoggedIn || isLoggedIn !== "true") {
-    window.location.href = "login.html"; 
+    window.location.href = "index.html"; 
   }
 }
 
 function logoutUser() {
   localStorage.removeItem("isLoggedIn");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
